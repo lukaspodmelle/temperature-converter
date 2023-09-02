@@ -3,7 +3,7 @@ This project is a solution to a challenge from [DevProjects](https://www.codemen
 
 **Built with HTML, CSS and JavaScript.**
 
-### :point_right: [**Live Preview**](https://got-long-links.netlify.app/) 
+### :point_right: [**Live Preview**](https://temperature-swap.netlify.app/) 
 
 Feedback is welcome!
 
