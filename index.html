@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div id="container">
+
+            <div id="app">
+
+                <div id="header">
+                    <h1>Convert a Temperature</h1>
+                </div>
+
+                <div id="converter">
+
+                    <div class="number-field-wrapper">
+                        <input type="number" id="initial-number" class="number-field" name="initial-number">
+                    </div>
+
+                    <div class="switch-wrapper">
+                        <input id="celsius" type="radio" name="switch" value="C" checked>
+                        <input id="fahrenheit" type="radio" name="switch" value="F">
+                        <label for="celsius">Celsius</label>
+                        <label for="fahrenheit">Fahrenheit</label>
+                        <span class="highlighter"></span>
+                    </div>
+
+                    <div class="arrow-down">
+                        <svg width="35" height="45" viewBox="0 0 35 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.0001 2.5C15.0001 1.11929 16.1194 0 17.5001 0C18.8808 0 20.0001 1.11929 20.0001 2.5V42.5C20.0001 43.8807 18.8808 45 17.5001 45C16.1194 45 15.0001 43.8807 15.0001 42.5V2.5Z" fill="#EEEDF5"/>
+                            <path d="M30.6168 25.7678C31.5931 24.7915 33.176 24.7915 34.1523 25.7678C35.1286 26.7441 35.1286 28.327 34.1523 29.3033L19.3032 44.1525C18.3269 45.1289 16.744 45.1289 15.7677 44.1525C14.7914 43.1762 14.7914 41.5933 15.7677 40.617L30.6168 25.7678Z" fill="#EEEDF5"/>
+                            <path d="M0.767872 29.3033C-0.208431 28.327 -0.208432 26.7441 0.767871 25.7678C1.74417 24.7914 3.32707 24.7914 4.30338 25.7678L19.1525 40.617C20.1288 41.5933 20.1288 43.1762 19.1525 44.1525C18.1762 45.1288 16.5933 45.1288 15.617 44.1525L0.767872 29.3033Z" fill="#EEEDF5"/>
+                        </svg>
+                    </div>
+
+                    <div id="result">
+                        <div id="result-number" class="result-field"></div>
+                    </div>
+
+                </div>
+
+                <div id="footer">Created by <a href="https://github.com/lukaspodmelle/temperature-converter">@lukaspodmelle &nbsp;<i class="fa-brands fa-github"></i></a></div>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
